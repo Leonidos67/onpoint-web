@@ -17,11 +17,11 @@ export function ThemeToggle() {
       <div className="flex items-center gap-1 rounded-full border border-border p-1 bg-muted/50">
         <button className="px-3 py-1.5 rounded-full text-xs font-medium">
           <Sun className="h-3.5 w-3.5 inline mr-1.5" />
-          Light
+          {/* Light */}
         </button>
         <button className="px-3 py-1.5 rounded-full text-xs font-medium">
           <Moon className="h-3.5 w-3.5 inline mr-1.5" />
-          Dark
+          {/* Dark */}
         </button>
       </div>
     )
@@ -38,8 +38,8 @@ export function ThemeToggle() {
         }`}
         aria-label="Light mode"
       >
-        <Sun className="h-3.5 w-3.5 inline mr-1.5" />
-        Light
+        <Sun className="h-3.5 w-3.5 inline" />
+        {/* Light */}
       </button>
       <button
         onClick={() => setTheme("dark")}
@@ -50,8 +50,8 @@ export function ThemeToggle() {
         }`}
         aria-label="Dark mode"
       >
-        <Moon className="h-3.5 w-3.5 inline mr-1.5" />
-        Dark
+        <Moon className="h-3.5 w-3.5 inline" />
+        {/* Dark */}
       </button>
     </div>
   )
