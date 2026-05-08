@@ -11,7 +11,7 @@ export default function Hero() {
       {/* Контент по центру */}
       <div className="max-w-3xl mx-auto text-center z-10">
         <span className="inline-block bg-[#f59f0d]/10 text-[#f59f0d] text-xs font-semibold px-3 py-1.5 rounded-full tracking-wide uppercase">
-          Тренер по бегу · Триатлон · IRONMAN
+          Тренер по бегу · Триатлон
         </span>
 
         <h1 className="text-4xl font-pixel md:text-6xl font-extrabold text-[#633e05] mb-6 leading-tight mt-4">
@@ -33,7 +33,7 @@ export default function Hero() {
             <ArrowRight className="w-4 h-4" />
           </Link>
           <Link
-            href="https://t.me/канал_отца"
+            href="https://t.me/begsmozgami"
             className="text-[#6b4810] font-medium font-pixel hover:text-[#633e05] transition-colors underline underline-offset-4"
           >
             Telegram-канал

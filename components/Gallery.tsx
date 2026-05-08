@@ -35,7 +35,7 @@ export default function Gallery() {
     },
     {
       id: 6,
-      title: "Велосборы Сочи",
+      title: "Старт в Зарайске",
       videoSrc: "/assets/video/VIDEO_ID_6.mp4",
     },
     // {
@@ -63,7 +63,7 @@ export default function Gallery() {
   const hasMore = visibleCount < videos.length;
 
   return (
-    <section className="px-6 py-16 md:py-24 bg-[#f9f0dd]">
+    <section id="gallery" className="px-6 py-16 md:py-24 bg-[#f9f0dd]">
       <div className="max-w-6xl mx-auto">
         <span className="text-[#f59f0d] font-pixel text-xs font-semibold tracking-wide uppercase">
           [ Галерея ]

@@ -10,6 +10,7 @@ import HowWork from "@/components/HowWork";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
 import ContactWidget from "@/components/ContactWidget";
+import StartsMap from "@/components/StartsMap";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
+      <StartsMap />
         <About />
         <Club />
         <Services />

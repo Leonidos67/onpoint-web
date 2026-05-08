@@ -1,4 +1,6 @@
-import { MessageCircle, ClipboardCheck, BarChart3, Flag } from "lucide-react";
+"use client";
+
+import { MessageCircle, ClipboardCheck, BarChart3, Flag, ArrowRight, ArrowRightIcon, ChevronRight } from "lucide-react";
 
 const steps = [
   {
@@ -28,6 +30,13 @@ const steps = [
 ];
 
 export default function HowWork() {
+  const scrollToCTA = () => {
+    const ctaSection = document.getElementById("cta");
+    if (ctaSection) {
+      ctaSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <section id="how" className="px-6 py-16 md:py-24">
       <div className="max-w-6xl mx-auto">
@@ -41,7 +50,7 @@ export default function HowWork() {
           Никакой бюрократии. Просто шаги, которые приведут вас к финишу.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
           {steps.map((step) => (
             <div
               key={step.num}
@@ -57,6 +66,19 @@ export default function HowWork() {
               <p className="text-sm text-[#6b4810] leading-relaxed">{step.desc}</p>
             </div>
           ))}
+
+          {/* Пятый блок - СТАРТ */}
+          <button
+            onClick={scrollToCTA}
+            className="group bg-[#f59f0d] border border-[#e8d5b0] rounded-xl p-6 shadow-sm hover:shadow-md transition-all cursor-pointer flex flex-col items-center justify-center text-center"
+          >
+            <div className="mb-4">
+              <ChevronRight className="w-12 h-12 text-white transition-transform duration-300 group-hover:rotate-90 group-hover:scale-110" />
+            </div>
+            <h3 className="text-xl font-pixel font-bold text-white mb-2">
+              СТАРТ
+            </h3>
+          </button>
         </div>
       </div>
     </section>

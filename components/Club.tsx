@@ -44,7 +44,7 @@ export default function Club() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <section id="club" className="px-6 py-16 md:py-24 bg-[#fdf6ea]">
+    <section id="club" className="px-6 py-16 md:py-24 bg-[#f9f0dd]">
       <div className="max-w-4xl mx-auto text-center">
         <span className="font-pixel text-[#f59f0d] text-xs font-semibold tracking-wide uppercase">
           [ Клуб ]

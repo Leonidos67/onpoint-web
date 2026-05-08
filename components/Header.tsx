@@ -8,9 +8,11 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
+    { label: "Мои старты", href: "#starts" },
     { label: "Обо мне", href: "#about" },
     { label: "Клуб", href: "#club" },
     { label: "Услуги", href: "#services" },
+    { label: "Галерея", href: "#gallery" },
     { label: "Отзывы", href: "#reviews" },
     { label: "Цены", href: "#prices" },
   ];
@@ -20,16 +22,8 @@ export default function Header() {
       <div className="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
         {/* Логотип */}
         <Link href="/" className="flex items-center text-xl font-extrabold text-[#633e05] tracking-tight">
-          <img
-            src="https://img.icons8.com/?size=100&id=3nvCErSCgWaE&format=png&color=000000"
-            alt="Logo"
-            className="w-7 h-7 mr-2"
-          />
-          {/* Замени на имя отца */}
-          Имя<span className="text-[#f59f0d]">Тренер</span>
+          <p className="mr-1">Думай</p> <span className="text-[#f59f0d]">и Беги</span>
         </Link>
-
-        {/* Десктоп */}
         <nav className="hidden md:flex items-center gap-8">
           {navItems.map((item) => (
             <Link

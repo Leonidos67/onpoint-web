@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <section id="about" className="px-6 py-16 md:py-24 bg-[#f9f0dd]">
+    <section id="about" className="px-6 py-16 md:py-24 bg-[#fdf6ea]">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         {/* Фото */}
         <div className="bg-[#f5eedb] border border-[#e8d5b0] rounded-xl h-80 md:h-96 overflow-hidden shadow-sm">

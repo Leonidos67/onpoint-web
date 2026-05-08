@@ -4,7 +4,7 @@ import Link from "next/link";
 const plans = [
   {
     name: "Бег",
-    price: "5 000 ₽",
+    price: "1 000 ₽",
     period: "/ месяц",
     features: [
       "Индивидуальный план",
@@ -16,7 +16,7 @@ const plans = [
   },
   {
     name: "Триатлон",
-    price: "8 000 ₽",
+    price: "1 000 ₽",
     period: "/ месяц",
     features: [
       "План: бег + вело + плавание",
@@ -28,7 +28,7 @@ const plans = [
   },
   {
     name: "Сборы",
-    price: "от 15 000 ₽",
+    price: "от 1 000 ₽",
     period: "",
     features: [
       "5–7 дней в горах",
